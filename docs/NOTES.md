@@ -37,7 +37,7 @@ I am using VSCode as my code editor and will be using the following VSCode exten
 
 #### Updated /server package.json
 
-Added the following script the following:
+Added the following script to /server/package.json:
 
 ```
 "scripts": {
@@ -51,7 +51,7 @@ Added the following script the following:
 I am using `npm` as my package manager
 
 - Installed the following dependencies to their respective workspace using `npm i [package-name] -w [workspace]`
-- Client Workspace: `react-router-dom`, `react-toastify`, `tailwindcss`, `@tailwindcss/vite`
+- Client Workspace: `react-router-dom`, `react-toastify`, `tailwindcss`, `@tailwindcss/vite`, `lodash`
 - Server Workspace: `nodemon`, `axios`, `cheerio`
 
 ## TO COME BACK TO:
