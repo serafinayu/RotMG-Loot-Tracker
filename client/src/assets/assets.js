@@ -1,7 +1,7 @@
 import userImg from './userImg.png';
 
 export const assets = {
-    userImg,
+    userImg
 }
 
 export const collections = {

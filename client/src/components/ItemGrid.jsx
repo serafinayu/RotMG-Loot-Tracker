@@ -5,8 +5,7 @@ const ItemGrid = () => {
 
   const {
     category, subCategory, tieredItems, utItems, stItems, shinyItems, 
-    applyFilter, selectedItem, setSelectedItem, selectedCollection, selectedCollectionId,
-    updateCollections
+    applyFilter, selectedItem, setSelectedItem, selectedCollection,
   } = useContext(ItemContext);
 
   useEffect(() => {
@@ -27,7 +26,7 @@ const ItemGrid = () => {
               >
                 <img 
                   src={item.imgUrl} 
-                  className={`w-13  ${
+                  className={`w-13 ${
                     selectedItem === itemId
                       ? 'border-4 border-white-400 scale-110' 
                       : 'border border-white hover:border-2 hover:border-gray-300'

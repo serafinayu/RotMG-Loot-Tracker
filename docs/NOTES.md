@@ -57,3 +57,7 @@ I am using `npm` as my package manager
 ## TO COME BACK TO:
 
 - Unsure if shared workspace is necessary, may remove later if not used (only useful if there are packages/libraries used by all workspaces)
+
+### Future Plans on Features
+
+- Item tooltip that looks like the tooltip in game or from the DPS Mirror Calculator
