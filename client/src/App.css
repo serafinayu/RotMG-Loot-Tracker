@@ -80,7 +80,7 @@
   -webkit-text-stroke: 0.5px currentColor;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   a.active {
     background-color: white;
     color: black !important;

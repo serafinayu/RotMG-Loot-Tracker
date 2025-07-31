@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <ItemContextProvider>
-        <div className="w-full min-h-screen bg-[#050505] flex flex-col">
+        <div className="w-full h-screen bg-[#050505] flex flex-col">
           <Navbar />
           <Routes>
             <Route index element={<Home />} />

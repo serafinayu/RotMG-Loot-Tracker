@@ -8,7 +8,7 @@ const Navbar = () => {
   const [sidebarVisible, setSidebarVisible] = useState(false);
 
   return (
-    <div className="bg-black flex justify-between items-center w-screen relative">
+    <div className="bg-black flex justify-between items-center w-screen relative w-screen">
       {/* Logo */}
       <Link
         to="/"
@@ -22,11 +22,11 @@ const Navbar = () => {
 
       {/* Desktop Navigation */}
       {token ? (
-        <NavLink to="/settings" className="hidden sm:block">
+        <NavLink to="/settings" className="hidden md:block">
           <img src={assets.userImg} className="px-5"></img>
         </NavLink>
       ) : (
-        <div className="hidden sm:block">
+        <div className="hidden md:block">
           <div className="flex gap-3 absolute left-1/2 transform -translate-x-1/2">
             <NavLink
               to="/"
@@ -48,15 +48,15 @@ const Navbar = () => {
         </div>
       )}
 
-      {/* Show NavLinks on Mobile */}
+      {/* Navlinks Menu on Mobile */}
       <i
         onClick={() => setSidebarVisible(true)}
-        className="bi bi-list sm:hidden px-5 text-3xl bold-icon cursor-pointer"
+        className="bi bi-list md:hidden px-5 text-3xl bold-icon cursor-pointer"
       ></i>
 
       {/* Mobile Navigation */}
       <div
-        className={`absolute top-0 right-0 bottom-0 sm:hidden overflow-hidden bg-black z-2 text-white ${
+        className={`absolute top-0 right-0 bottom-0 md:hidden overflow-hidden bg-black z-2 text-white ${
           sidebarVisible ? "w-full h-screen" : "w-0"
         }`}
       >

@@ -74,11 +74,12 @@ const ItemContextProvider = (props) => {
   const [selectedCollection, setSelectedCollection] = useState(
     collections[selectedCollectionId]
   );
+  const [showCollections, setShowCollections] = useState(false);
 
   const [displayLogin, setDisplayLogin] = useState(false);
 
   // Set User Login
-  const [token, setToken] = useState("");
+  const [token, setToken] = useState("dafsdf");
 
   const updateCollections = async (itemId) => {
     setSelectedCollectionId(itemId);
@@ -213,6 +214,8 @@ const ItemContextProvider = (props) => {
     token,
     displayLogin,
     setDisplayLogin,
+    showCollections,
+    setShowCollections,
   };
 
   return (
