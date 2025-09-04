@@ -1,1 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css");
 @import "tailwindcss";
+
+/* 
+    Colors:
+    - Main Page Background: [#050505]
+    - Primary: [#1A1A1A]
+    - Secondary: [#111111]
+    - Tertiary: [#303030]
+*/
+
+* {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 600;
+}
+
+.font-lexend {
+  font-family: "Lexend", sans-serif;
+}
+
+/* Custom scrollbar for item grid */
+.item-grid-scrollbar {
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #303030 #1a1a1a;
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+.item-grid-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.item-grid-scrollbar::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 8px;
+  margin: 4px;
+}
+
+.item-grid-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #303030, #404040);
+  border-radius: 8px;
+  border: 2px solid #1a1a1a;
+  transition: all 0.3s ease;
+}
+
+.item-grid-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #404040, #505050);
+  border-color: #111111;
+  transform: scale(1.05);
+}
+
+.item-grid-scrollbar::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(135deg, #505050, #606060);
+}
+
+/* Corner where horizontal and vertical scrollbars meet */
+.item-grid-scrollbar::-webkit-scrollbar-corner {
+  background: #1a1a1a;
+}
+
+.scattered-items-mask {
+  background-image: url("/scatteredItems.png");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center -250%;
+  background-repeat: no-repeat;
+}
+
+/* a.active {
+  text-decoration: underline;
+  color: white;
+} */
+
+.placeholder-dimmed::placeholder {
+  color: rgba(255, 255, 255, 20%);
+}
+
+.bold-icon {
+  -webkit-text-stroke: 0.5px currentColor;
+}
+
+@media (max-width: 768px) {
+  a.active {
+    background-color: white;
+    color: black !important;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: white;
+  }
+}

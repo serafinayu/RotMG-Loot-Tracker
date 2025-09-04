@@ -1,20 +1,27 @@
-import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css'
-import Home from './pages/Home';
+// import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Settings from "./pages/Settings";
+import FAQ from "./pages/FAQ";
+import ItemContextProvider from "./context/ItemContext.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <BrowserRouter>
-      <Routes>
-        <Route index element={<Home/>} />
-        <Route index element={<MyItems/>} />
-        <Route index element={<Settings/>} />
-      </Routes>
-    </ BrowserRouter>
-  )
+      <ItemContextProvider>
+        <div className="w-full h-screen bg-[#050505] flex flex-col">
+          <Navbar />
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/faq" element={<FAQ />} />
+          </Routes>
+        </div>
+      </ItemContextProvider>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

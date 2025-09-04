@@ -37,7 +37,7 @@ I am using VSCode as my code editor and will be using the following VSCode exten
 
 #### Updated /server package.json
 
-Added the following script the following:
+Added the following script to /server/package.json:
 
 ```
 "scripts": {
@@ -51,9 +51,13 @@ Added the following script the following:
 I am using `npm` as my package manager
 
 - Installed the following dependencies to their respective workspace using `npm i [package-name] -w [workspace]`
-- Client Workspace: `react-router-dom`, `react-toastify`, `tailwindcss`, `@tailwindcss/vite`
+- Client Workspace: `react-router-dom`, `react-toastify`, `tailwindcss`, `@tailwindcss/vite`, `lodash`
 - Server Workspace: `nodemon`, `axios`, `cheerio`
 
 ## TO COME BACK TO:
 
 - Unsure if shared workspace is necessary, may remove later if not used (only useful if there are packages/libraries used by all workspaces)
+
+### Future Plans on Features
+
+- Item tooltip that looks like the tooltip in game or from the DPS Mirror Calculator
