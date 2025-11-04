@@ -52,34 +52,7 @@ I am using `npm` as my package manager
 
 - Installed the following dependencies to their respective workspace using `npm i [package-name] -w [workspace]`
 - Client Workspace: `react-router-dom`, `react-toastify`, `tailwindcss`, `@tailwindcss/vite`, `lodash`
-- Server Workspace: `nodemon`, `axios`, `cheerio`, `mongoose`, `express`, `bcrypt`, `jsonwebtoken`, `dotenv`, `validator`, `cors`
-
-## Work on Client Side Development
-
-### Development Flow
-
-- Create UI framework on Figma
-- Build the following main pages in the following order:
-  - Home (logged in)
-  - Home (landing page)
-- Implemented client side item sorting and filtering
-
-## Server Side Development
-
-- Created .env file for environment variables
-- Set up mongodb config file for database connection
-  - Allow all IPs to make edits to database by setting network access to "0.0.0.0/0". Ensures API requests aren't timedout or denied
-- Established file structure for API and build on them in the following order
-  - /config - config files, includes mongodb connection
-  - /models - data models for user, collection, and item
-  - /controllers - logic and functions for handling requests
-  - /routes - defines the API's routes
-  - /middleware - logic and functions that occur before the controller function, used to authenticate users first
-
-## New Concepts
-
-- Transactions in Mongoose: transactions allow for the execution of multiple operations and can undo all operations if one fails. (used in user controller for /deleteUser function)
-- HTTP Response Status Codes: 400 Bad Request, 403 Forbidden, 409 Conflict
+- Server Workspace: `nodemon`, `axios`, `cheerio`
 
 ## TO COME BACK TO:
 

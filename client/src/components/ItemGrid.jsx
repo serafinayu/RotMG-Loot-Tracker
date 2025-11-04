@@ -38,7 +38,7 @@ const ItemGrid = () => {
               }}
               className={`relative ${
                 showCollections
-                  ? "cursor-not-allowed"
+                  ? "cursor-auto"
                   : "cursor-pointer hover:scale-105 duration-100"
               } select-none`}
             >
