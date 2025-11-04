@@ -79,7 +79,7 @@ const ItemContextProvider = (props) => {
   const [displayLogin, setDisplayLogin] = useState(false);
 
   // Set User Login
-  const [token, setToken] = useState("dafsdf");
+  const [token, setToken] = useState("sdfadsf");
 
   const updateCollections = async (itemId) => {
     setSelectedCollectionId(itemId);
